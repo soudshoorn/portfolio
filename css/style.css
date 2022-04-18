@@ -656,4 +656,7 @@ footer {
     .project {
         width: 100%;
     }
+    .contact {
+        padding: 40px;
+    }
 }
