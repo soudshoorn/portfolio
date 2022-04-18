@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senna Oudshoorn</title>
 
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <section id="landing-page">
         <nav>
-            <figure>
-                <img id="personal-logo" src="./assets/logo.svg" alt="">
-            </figure>
+            <div class="nav__title">
+                <label class="nav__title--label">Senna Oudshoorn</label>
+            </div>
             <ul class="nav__link--list">
                 <li class="nav__link">
                     <a href="#" class="
@@ -36,10 +39,148 @@
                     link__hover-effect--black
                     ">Contact</a>
                 </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor 
+                    link__hover-effect 
+                    link__hover-effect--black
+                    "><i class="fas fa-adjust"></i></a>
+                </li>
             </ul>
         </nav>
+        <header class="header">
+            <div class="header__content">
+                <img src="" alt="">
+                <h1 class="title">Hi, I'm Senna</h1>
+                <p class="header__para">I'm a Frontend Software Engineer with a strong passion for
+                    building web applications with great user experiences.
+                </p>
+                <div class="social__list">
+                    <a href="https://linkedin.com/soudshoorn" target="_blank" class="social__link click">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/soudshoorn" target="_blank" class="social__link click">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="./assets/David Bragg Resume.pdf" target="_blank" class="social__link click">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+                <div class="banner">
+                    <img src="./assets/undraw_heatmap_uyye.svg" alt="" class="banner--img">
+                </div>
+            </div>
+        </header>
+        <button class="mail__btn click">
+            <i class="fas fa-envelope"></i>
+        </button>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
     </section>
+
+    <section id="aboutme">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">A little bit <span class="navyblue">about me</span></h1>
+                <div class="aboutme__description">
+                    <p class="aboutme__description--para">
+                        <!-- Hoi ik ben Senna Oudshoorn, ik kom uit Den Haag en ik ben student op het ROC Mondriaan. Momenteel volg
+                        ik daar de opleiding Software Developer. Ik zit in het eerste leerjaar en heb dus nog veel te leren,
+                        maar ik ben zeer gemotiveerd en leergierig om nog veel meer te leren over alles wat met programmeren
+                        te maken heeft. Na deze opleiding en mijn stage wil ik hopelijk nog een vervolgopleiding op het HBO
+                        doen.
+                        Op mijn portfolio kan je al mijn (school)projecten & voortgang vinden. -->
+
+                        I'm Senna Oudshoorn, A 17-year-old Dutch Front-end Developer. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="navyblue">projects</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Car Sales Projects
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML5, CSS3, Javascript
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nihil enim illum, quod corporis optio, nobis excepturi
+                                    earum autem doloribus repellat possimus dicta hic amet
+                                    quasi similique. Porro quam doloremque recusandae.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/soudshoorn" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://github.com/soudshoorn" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <div class="footer__title">
+                    <label class="footer__title--label">Senna Oudshoorn</label>
+                </div>
+                <div class="footer__social--list">
+                    <a href="" class="
+                  footer__social--link 
+                  link__hover-effect 
+                  link__hover-effect--white
+                ">
+                        Github
+                    </a>
+                    <a href="" class="
+                  footer__social--link 
+                  link__hover-effect 
+                  link__hover-effect--white
+                ">
+                        LinkedIn
+                    </a>
+                    <a href="" class="
+                  footer__social--link 
+                  link__hover-effect 
+                  link__hover-effect--white
+                ">
+                        Contact
+                    </a>
+                    <a href="" class="
+                  footer__social--link 
+                  link__hover-effect 
+                  link__hover-effect--white
+                ">
+                        Resume
+                    </a>
+                </div>
+                <div class="footer__copyright">&copy; Senna Oudshoorn</div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
