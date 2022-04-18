@@ -59,6 +59,17 @@ button {
     cursor: pointer;
 }
 
+.letscreatesomething {
+    color: #273c75;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all 300ms ease;
+}
+
+.letscreatesomething:hover {
+    color: #242424;
+}
+
 /*
 
     LANDING
@@ -224,6 +235,50 @@ nav {
     background-color: #e9e9e9;
 }
 
+.row__aboutme {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.aboutme__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 24px;
+}
+
+.aboutme__description--para {
+    max-width: 600px;
+}
+
+.languages__language--img {
+    width: 80px;
+}
+
+.languages {
+    display: flex;
+}
+
+.languages__language {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 8px;
+    padding: 16px;
+}
+
+.languages__name {
+    font-weight: 900;
+    color: #242424;
+    margin-top: 4px;
+    transform: scale(0);
+    transition: all 300ms ease;
+}
+
+.languages__language:hover .languages__name {
+    transform: scale(1);
+}
+
 /*
 
     PROJECTS
@@ -271,7 +326,7 @@ nav {
 
 .project__description--link {
     color: white;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .project__wrapper:hover .project__wrapper--bg {
@@ -335,4 +390,20 @@ footer {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
+}
+
+/*
+
+MEDIA QUERIES
+
+*/
+
+@media (max-width: 726px) {
+    .aboutme__wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .languages__language--img {
+        width: 60px;
+    }
 }
