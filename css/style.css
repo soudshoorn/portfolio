@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     scroll-behavior: smooth;
 }
 
@@ -231,9 +231,10 @@ nav, .scroll, .header {
     font-size: 32px;
     color: white;
     background-color: #273c75;
-    position: absolute;
+    position: fixed;
     bottom: 32px;
     right: 40px;
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
 }
 
 .scroll {
