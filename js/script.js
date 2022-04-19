@@ -40,6 +40,7 @@ function toggleContact() {
         isModalOpen = false;
         return document.body.classList.remove("contact--open");
     }
+    window.scrollTo(0, 0);
     isModalOpen = true;
     document.body.classList += " contact--open";
 }

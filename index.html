@@ -10,14 +10,13 @@
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 
-    
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
-    (function(){
-        emailjs.init("k-Py2NOiNbQ06lq8a");
-    })();
+        (function () {
+            emailjs.init("k-Py2NOiNbQ06lq8a");
+        })();
     </script>
 </head>
 
@@ -25,7 +24,7 @@
     <section id="landing-page">
         <nav>
             <div class="nav__title">
-                <label class="nav__title--label">Senna</label>
+                <a href="/"></a><label class="nav__title--label">Senna</label></a>
             </div>
             <ul class="nav__link--list">
                 <li class="nav__link">
@@ -47,7 +46,7 @@
                     nav__link--anchor 
                     link__hover-effect 
                     link__hover-effect--black
-                    "  onclick="toggleContact()">Contact</a>
+                    " onclick="toggleContact()">Contact</a>
                 </li>
                 <li class="nav__link">
                     <a href="#" class="
@@ -112,13 +111,14 @@
                         Send it my way
                     </button>
                 </form>
+                <img class="contact__img" src="./assets/undraw_personal_text_re_vqj3.svg" alt="">
                 <div class="contact__overlay contact__overlay--loading">
                     <i class="fas fa-spinner"></i>
                 </div>
                 <div class="contact__overlay contact__overlay--success">
                     Thanks for the message, looking forward to speaking to you soon!
                 </div>
-                <i  onclick="toggleContact()" class="fas fa-times modal__exit click"></i>
+                <i onclick="toggleContact()" class="fas fa-times modal__exit click"></i>
             </div>
         </div>
     </section>
@@ -130,29 +130,34 @@
                 <div class="aboutme__wrapper">
                     <div class="aboutme__description">
                         <p class="aboutme__description--para">
-                            I'm Senna Oudshoorn, A 17-year-old Dutch 
+                            I'm Senna Oudshoorn, A 17-year-old Dutch
                             <strong>Front-end Developer</strong>.
                             With a strong passion for creating User Interfaces with great User Experiences.
-                            <br>
-                            Problem solver, Fan of Formula 1, Movies and Studious. 
-                            <br>
+                            <br><br>
+                            Problem solver, Fan of Formula 1, Movies and Studious.
+                            <br><br>
                             Currently in the first year of college studying Software Development.
                             <br>
-                            <a class="letscreatesomething click" href="#contact" onclick="toggleContact()">Lets create something!</a>
+                            <a class="letscreatesomething click" href="#contact" onclick="toggleContact()">Lets create
+                                something together!</a>
                         </p>
                     </div>
                     <div class="languages">
                         <figure class="languages__language">
-                            <img class="languages__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
-                            <span class="languages__name">HTML</span>                       
+                            <img class="languages__language--img"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                                alt="">
+                            <span class="languages__name">HTML</span>
                         </figure>
                         <figure class="languages__language">
-                            <img class="languages__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
-                            <span class="languages__name">CSS</span>     
+                            <img class="languages__language--img"
+                                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+                            <span class="languages__name">CSS</span>
                         </figure>
                         <figure class="languages__language">
-                            <img class="languages__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
-                            <span class="languages__name">JavaScript</span>     
+                            <img class="languages__language--img"
+                                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+                            <span class="languages__name">JavaScript</span>
                         </figure>
                     </div>
                 </div>
@@ -169,27 +174,28 @@
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <img src="./assets/project-tictactoe.jpg" class="project__img" alt="">
                             <div class="project__description">
-                                <span class="project__type">WEBSITE</span>
+                                <span class="project__type">Featured Project</span>
                                 <h3 class="project__description--title">
-                                    Car Sales Projects
+                                    Tic Tac Toe
                                 </h3>
                                 <h4 class="project__description--sub-title">
                                     HTML5, CSS3, Javascript
                                 </h4>
                                 <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Nihil enim illum, quod corporis optio, nobis excepturi
-                                    earum autem doloribus repellat possimus dicta hic amet
-                                    quasi similique. Porro quam doloremque recusandae.
+                                    A web app for playing a game of tic tac toe. Play against a friend or the computer
+                                    (the computer is pretty dumb), choose how many rounds you want to play. Till the 
+                                    winner will be decided. This was my first javascript project and learned alot from it. 
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="https://github.com/soudshoorn" target="_blank" class="project__description--link">
+                                    <a href="https://github.com/soudshoorn/tictactoe" target="_blank"
+                                        class="project__description--link">
                                         <i class="fab fa-github"></i>
                                     </a>
-                                    <a href="https://github.com/soudshoorn" target="_blank" class="project__description--link">
-                                        <i class="fas fa-link"></i>
+                                    <a href="https://tictactoe-zeta-seven.vercel.app/" target="_blank"
+                                        class="project__description--link">
+                                        <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </div>
                             </div>
@@ -197,27 +203,29 @@
                     </li>
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <img src="./assets/project-kleinverhuur.jpg" class="project__img" alt="">
                             <div class="project__description">
-                                <span class="project__type">WEBSITE</span>
+                                <span class="project__type">Featured Project</span>
                                 <h3 class="project__description--title">
-                                    Car Sales Projects
+                                    KleinVerhuur
                                 </h3>
                                 <h4 class="project__description--sub-title">
                                     HTML5, CSS3, Javascript
                                 </h4>
                                 <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Nihil enim illum, quod corporis optio, nobis excepturi
-                                    earum autem doloribus repellat possimus dicta hic amet
-                                    quasi similique. Porro quam doloremque recusandae.
+                                    My first website for a client, he rents party products and wanted a new website 
+                                    because the old one was being updated with new products anymore. We also did alot of
+                                    design changes and with that I finished my first paid project. I will update this website
+                                    in the near future with other technoligies that I have learned after creating this project.
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="https://github.com/soudshoorn" target="_blank" class="project__description--link">
+                                    <a href="https://github.com/soudshoorn/kleinverhuur" target="_blank"
+                                        class="project__description--link">
                                         <i class="fab fa-github"></i>
                                     </a>
-                                    <a href="https://github.com/soudshoorn" target="_blank" class="project__description--link">
-                                        <i class="fas fa-link"></i>
+                                    <a href="https://kleinverhuur.vercel.app/verhuur.html" target="_blank"
+                                        class="project__description--link">
+                                        <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </div>
                             </div>
@@ -225,27 +233,28 @@
                     </li>
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <img src="./assets/project-music4u.jpg" class="project__img" alt="">
                             <div class="project__description">
-                                <span class="project__type">WEBSITE</span>
+                                <span class="project__type">Featured Project</span>
                                 <h3 class="project__description--title">
-                                    Car Sales Projects
+                                    Music4U
                                 </h3>
                                 <h4 class="project__description--sub-title">
                                     HTML5, CSS3, Javascript
                                 </h4>
                                 <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Nihil enim illum, quod corporis optio, nobis excepturi
-                                    earum autem doloribus repellat possimus dicta hic amet
-                                    quasi similique. Porro quam doloremque recusandae.
+                                    School project that I am actively still developing. It is going to be the page for a radio 
+                                    station that wants their listeners to be able to listen to the music that they play on their radio 
+                                    also have information about the artists and listen to the radio.
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="https://github.com/soudshoorn" target="_blank" class="project__description--link">
+                                    <a href="https://github.com/soudshoorn/music4u" target="_blank"
+                                        class="project__description--link">
                                         <i class="fab fa-github"></i>
                                     </a>
-                                    <a href="https://github.com/soudshoorn" target="_blank" class="project__description--link">
-                                        <i class="fas fa-link"></i>
+                                    <a href="https://music4u-liard.vercel.app/" target="_blank"
+                                        class="project__description--link">
+                                        <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </div>
                             </div>
@@ -253,83 +262,27 @@
                     </li>
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <img src="./assets/project-library.jpg" class="project__img" alt="">
                             <div class="project__description">
-                                <span class="project__type">WEBSITE</span>
+                                <span class="project__type">Featured Project</span>
                                 <h3 class="project__description--title">
-                                    Car Sales Projects
+                                    Library
                                 </h3>
                                 <h4 class="project__description--sub-title">
-                                    HTML5, CSS3, Javascript
+                                    HTML5, CSS3
                                 </h4>
                                 <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Nihil enim illum, quod corporis optio, nobis excepturi
-                                    earum autem doloribus repellat possimus dicta hic amet
-                                    quasi similique. Porro quam doloremque recusandae.
+                                    A library shop, currently in its first stage. Was a great practice to be comfortable with flexbox 
+                                    and styling. In the near future it will expanded with a shopping catalogus and many other features.
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="https://github.com/soudshoorn" target="_blank" class="project__description--link">
+                                    <a href="https://github.com/soudshoorn/library" target="_blank"
+                                        class="project__description--link">
                                         <i class="fab fa-github"></i>
                                     </a>
-                                    <a href="https://github.com/soudshoorn" target="_blank" class="project__description--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__description">
-                                <span class="project__type">WEBSITE</span>
-                                <h3 class="project__description--title">
-                                    Car Sales Projects
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML5, CSS3, Javascript
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Nihil enim illum, quod corporis optio, nobis excepturi
-                                    earum autem doloribus repellat possimus dicta hic amet
-                                    quasi similique. Porro quam doloremque recusandae.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/soudshoorn" target="_blank" class="project__description--link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://github.com/soudshoorn" target="_blank" class="project__description--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__description">
-                                <span class="project__type">WEBSITE</span>
-                                <h3 class="project__description--title">
-                                    Car Sales Projects
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML5, CSS3, Javascript
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Nihil enim illum, quod corporis optio, nobis excepturi
-                                    earum autem doloribus repellat possimus dicta hic amet
-                                    quasi similique. Porro quam doloremque recusandae.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/soudshoorn" class="project__description--link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://github.com/soudshoorn" class="project__description--link">
-                                        <i class="fas fa-link"></i>
+                                    <a href="https://library.vercel.app/" target="_blank"
+                                        class="project__description--link">
+                                        <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </div>
                             </div>
@@ -361,7 +314,7 @@
                 ">
                         LinkedIn
                     </a>
-                    <a  onclick="toggleContact()" href="#" class="
+                    <a onclick="toggleContact()" href="#" class="
                   footer__social--link 
                   link__hover-effect 
                   link__hover-effect--white
