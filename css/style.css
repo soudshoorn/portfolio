@@ -185,7 +185,6 @@ nav, .scroll, .header {
 .mail__btn {
     width: 70px;
     height: 70px;
-    border: none;
     border-radius: 50%;
     font-size: 32px;
     color: white;
@@ -193,7 +192,9 @@ nav, .scroll, .header {
     position: fixed;
     bottom: 32px;
     right: 40px;
+    border: none;
     box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
+    box-sizing: content-box;
     outline: solid 10px #1bbb8b70;
     z-index: 100;
 }
