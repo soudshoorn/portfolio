@@ -141,6 +141,10 @@ label {
     font-weight: bold;
 }
 
+.section__title--wrapper {
+    display: flex;
+}
+
 nav, .scroll, .header {
     opacity: 1;
     visibility: visible;
@@ -402,11 +406,12 @@ nav {
 .aboutme__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 24px;
 }
 
 .aboutme__image {
-    width: 300px;
+    width: 250px;
 }
 
 .aboutme__description--para {
@@ -760,6 +765,12 @@ footer {
     }
     .aboutme__wrapper {
         flex-direction: column;
+        text-align: center;
+    }
+    .section__title--wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         text-align: center;
     }
     .technoligies__language--img {
