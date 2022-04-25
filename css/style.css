@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 li {
@@ -23,7 +24,6 @@ strong {
 
 body {
     overflow-x: hidden;
-    max-width: 100vw;
     background-color: #082f33;
 }
 
@@ -375,7 +375,7 @@ nav {
     background: url('../assets/wave.svg');
     content: "";
     position: absolute;
-    width: 101vw;
+    width: 100vw;
     height: 12vw;
     overflow-x: hidden;
     left: 0;
