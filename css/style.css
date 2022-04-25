@@ -194,8 +194,8 @@ nav, .scroll, .header {
     right: 40px;
     border: none;
     box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
-    box-sizing: content-box;
-    outline: solid 10px #1bbb8b70;
+    outline: none;
+    box-shadow: 0 0 0 10px #1bbb8b70;
     z-index: 100;
 }
 
