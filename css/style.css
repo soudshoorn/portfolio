@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 li {
@@ -21,12 +22,19 @@ strong {
     font-family: 'Roboto Mono', sans-serif;
 }
 
-section {
-    background-color: rgb(245, 245, 245);
+section, body {
+    background-color: #082f33;
 }
 
 .navyblue {
-    color: #273c75;
+    color: #1bbb8b;
+}
+
+.number__section {
+    font-size: 24px;
+    font-family: 'Roboto Mono', sans-serif;
+    color: #1bbb8bb9;
+    padding: 8px;
 }
 
 .container {
@@ -78,14 +86,7 @@ button {
     width: 0;
     right: 0;
     transition: all 300ms ease;
-}
-
-.link__hover-effect--white:after {
-    background-color: white;
-}
-
-.link__hover-effect--black:after {
-    background-color: #242424;
+    background-color: #1bbb8b;
 }
 
 .link__hover-effect:hover:after {
@@ -95,19 +96,19 @@ button {
 
 .letscreatesomething {
     font-family: 'Roboto Mono', sans-serif;
-    color: #273c75;
+    color: #1bbb8b;
     font-size: 18px;
     font-weight: 900;
     transition: all 300ms ease;
 }
 
 .letscreatesomething:hover {
-    color: #242424;
+    color: #f5f5f5;
 }
 
 input, textarea {
     width: 100%;
-    background-color: #242424;
+    background-color: #082f33;
     color: white;
     outline: none;
     border: 3px solid #c0c4cc;
@@ -123,7 +124,7 @@ input:hover, textarea:hover {
 }
 
 input:focus, textarea:focus {
-    border-color: #273c75;
+    border-color: #1bbb8b;
 }
 
 textarea {
@@ -148,7 +149,7 @@ nav, .scroll, .header {
     transition: all 400ms 200ms;
 }
 
-.dark-theme .title,
+/* .dark-theme .title,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
@@ -161,15 +162,39 @@ nav, .scroll, .header {
 {
     color: white;
     transition: all 300ms ease;
-}
+} */
 
 .dark-theme section {
     transition: all 300ms ease;
-    background-color: #242424;
+    background-color: #f5f5f5;
 }
 
 .dark-theme #aboutme {
     background-color: #2e2e2e;
+}
+
+.mail__btn {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    font-size: 32px;
+    color: white;
+    background-color: #1bbb8b;
+    position: fixed;
+    bottom: 32px;
+    right: 40px;
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
+    outline: solid 10px #1bbb8b70;
+    z-index: 100;
+}
+
+.mail__btn--title {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    display: block;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 /*
@@ -203,10 +228,11 @@ nav, .scroll, .header {
     font-size: 56px;
     margin-bottom: 12px;
     line-height: 1;
+    color: #f5f5f5;
 }
 
 .header__para {
-    color: #242424;
+    color: #f5f5f5;
     max-width: 500px;
 }
 
@@ -216,7 +242,7 @@ nav, .scroll, .header {
 }
 
 .social__link {
-    color: #242424;
+    color: #f5f5f5;
     font-size: 24px;
     margin-right: 16px;
 }
@@ -232,31 +258,18 @@ nav, .scroll, .header {
     width: 100%;
 }
 
-.mail__btn {
-    width: 70px;
-    height: 70px;
-    border: none;
-    border-radius: 50%;
-    font-size: 32px;
-    color: white;
-    background-color: #273c75;
-    position: fixed;
-    bottom: 32px;
-    right: 40px;
-    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
-}
-
 .scroll {
     position: absolute;
     left: 50%;
     bottom: 20px;
     transform: translateX(-50%);
+    z-index: 100;
 }
 
 .scroll__icon {
     width: 20px;
     height: 30px;
-    border: 2px solid #273c75;
+    border: 2px solid #1bbb8b;
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -267,7 +280,7 @@ nav, .scroll, .header {
     content: "";
     width: 4px;
     height: 6px;
-    background-color: #273c75;
+    background-color: #1bbb8b;
     border-radius: 4px;
     animation: scroll 1000ms infinite alternate-reverse;
 }
@@ -315,7 +328,7 @@ nav {
 .nav__link--anchor {
     text-decoration: none;
     font-size: 16px;
-    color: #242424;
+    color: #f5f5f5;
     font-weight: 700;
 }
 
@@ -328,13 +341,13 @@ nav {
     font-size: 24px;
     color: transparent;
     letter-spacing: 2px;
-    -webkit-text-stroke: 1px #273c75;
+    -webkit-text-stroke: 1px #1bbb8b;
     transition: all 300ms ease;
     cursor: pointer;
 }
 
 .nav__title--label:hover {
-    color: #273c75;
+    color: #1bbb8b;
     -webkit-text-stroke: none;
 }
 
@@ -345,7 +358,34 @@ nav {
 */
 
 #aboutme {
-    background-color: #e9e9e9;
+    background-color: #336662;
+    position: relative;
+    padding: 50px 0;
+    margin-bottom: 100px;
+    color: #f5f5f5;
+}
+
+#aboutme:before,
+#aboutme:after {
+    background: url('../assets/wave.svg');
+    content: "";
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#aboutme:before {
+    top: 1px;
+    transform: translateY(-100%) rotate(360deg);
+}
+
+#aboutme:after {
+    bottom: 1px;
+    transform: translateY(100%) rotate(180deg);
 }
 
 .row__aboutme {
@@ -355,24 +395,67 @@ nav {
 
 .aboutme__wrapper {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin: 0 24px;
+}
+
+.aboutme__image {
+    width: 300px;
 }
 
 .aboutme__description--para {
     max-width: 600px;
 }
 
-.languages__language--img {
+/*
+
+    PERSPECTIVE
+
+*/
+
+.perspective {
+    width: 20em;
+    height: 18em;
+    background: url('../assets/memoji.png');
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+/*
+
+    TECHNOLIGIES
+
+*/
+
+#technoligies {
+    margin-top: 120px;
+}
+
+.technoligies__language--img {
     width: 80px;
 }
 
-.languages {
+.technoligies {
     display: flex;
+    text-align: center;
+    gap: 40px;
 }
 
-.languages__language {
+.technoligies__title {
+    text-align: center;
+}
+
+.technoligies__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technoligies__language {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -380,16 +463,21 @@ nav {
     padding: 16px;
 }
 
-.languages__name {
+.technoligies {
+    text-align: right;
+    width: 100%;
+}
+
+.technoligies__name {
     font-weight: 900;
-    color: #242424;
+    color: #f5f5f5;
     margin-top: 4px;
     transform: scale(0);
     transition: all 300ms ease;
     font-family: 'Roboto Mono', sans-serif;
 }
 
-.languages__language:hover .languages__name {
+.technoligies__language:hover .technoligies__name {
     transform: scale(1);
 }
 
@@ -400,9 +488,9 @@ nav {
 */
 
 .section__title {
-    text-align: center;
+    color: #f5f5f5;
+    text-align: left;
     font-size: 48px;
-    margin-bottom: 60px;
 }
 
 .project__list {
@@ -419,7 +507,7 @@ nav {
 
 .project__type {
     font-family: 'Roboto Mono', sans-serif;
-    color: #273c75;
+    color: #1bbb8b;
     padding: 3px;
 }
 
@@ -433,19 +521,19 @@ nav {
 
 .project__description {
     margin-top: 12px;
-    color: #242424;
+    color: #f5f5f5;
     max-width: 550px;
 }
 
 .project__description--link {
-    color: #242424;
+    color: #336662;
     font-size: 24px;
     margin-right: 8px;
     transition: all 300ms ease;
 }
 
 .project__description--link:hover {
-    color: #273c75;
+    color: #1bbb8b;
 }
 
 .project__description--title {
@@ -456,11 +544,12 @@ nav {
 .project__description--sub-title {
     font-family: 'Roboto Mono', sans-serif;
     margin-top: 8px;
+    color: #336662;
 }
 
 .project__description--para {
     margin: 16px 0;
-    color: #4b4b4b;
+    color: #bfbfbf;
 }
 
 .project:hover .project__img {
@@ -475,7 +564,7 @@ nav {
 */
 
 footer {
-    background-color: #242424;
+    background-color: #336662;
     padding: 4% 0;
 }
 
@@ -536,7 +625,7 @@ footer {
     width: 100%;
     height: 100%;
     color: white;
-    background-color: #242424;
+    background-color: #336662;
     transition: all 300ms ease-in;
     transform: translateX(-110%);
 }
@@ -569,8 +658,8 @@ footer {
 }
 
 .form__submit {
-    background-color: #273c75;
-    border: 2px solid #273c75;
+    background-color: #1bbb8b;
+    border: 2px solid #1bbb8b;
     color: white;
     font-weight: 700;
     width: 100%;
@@ -585,8 +674,8 @@ footer {
 }
 
 .form__submit:active {
-    border-color: #273c75;
-    color: #273c75;
+    border-color: #1bbb8b;
+    color: #1bbb8b;
 }
 
 .contact__overlay {
@@ -601,7 +690,7 @@ footer {
 }
 
 .contact__overlay--loading {
-    background-color: #242424;
+    background-color: #336662;
     font-size: 80px;
     z-index: -1;
 }
@@ -667,7 +756,7 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    .languages__language--img {
+    .technoligies__language--img {
         width: 60px;
     }
     .modal {

@@ -31,29 +31,19 @@
                     <a href="#" class="
                     nav__link--anchor 
                     link__hover-effect 
-                    link__hover-effect--black
                     ">About</a>
                 </li>
                 <li class="nav__link">
                     <a href="#" class="
                     nav__link--anchor 
                     link__hover-effect 
-                    link__hover-effect--black
                     ">Projects</a>
                 </li>
                 <li class="nav__link">
                     <a href="#" class="
                     nav__link--anchor 
                     link__hover-effect 
-                    link__hover-effect--black
                     " onclick="toggleContact()">Contact</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor 
-                    link__hover-effect 
-                    link__hover-effect--black
-                    "><i class="fas fa-adjust" onclick="toggleContrast()"></i></a>
                 </li>
             </ul>
         </nav>
@@ -76,12 +66,12 @@
                     </a>
                 </div>
                 <div class="banner">
-                    <img src="./assets/undraw_heatmap_uyye.svg" alt="" class="banner--img">
+                    <img src="./assets/memoji.png" alt="" class="banner--img">
                 </div>
             </div>
         </header>
         <button class="mail__btn click" onclick="toggleContact()">
-            <i class="fas fa-envelope"></i>
+            <span class="mail__btn--title">let's<br>talk</span>
         </button>
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
@@ -111,7 +101,7 @@
                         Send it my way
                     </button>
                 </form>
-                <img class="contact__img" src="./assets/undraw_personal_text_re_vqj3.svg" alt="">
+                <!-- <img class="contact__img" src="./assets/undraw_personal_text_re_vqj3.svg" alt=""> -->
                 <div class="contact__overlay contact__overlay--loading">
                     <i class="fas fa-spinner"></i>
                 </div>
@@ -126,7 +116,7 @@
     <section id="aboutme">
         <div class="container">
             <div class="row row__aboutme">
-                <h1 class="section__title">A little bit <span class="navyblue">about me</span></h1>
+                <h1 class="section__title"><span class="number__section">01.</span>About me</h1>
                 <div class="aboutme__wrapper">
                     <div class="aboutme__description">
                         <p class="aboutme__description--para">
@@ -142,23 +132,36 @@
                                 something together!</a>
                         </p>
                     </div>
-                    <div class="languages">
-                        <figure class="languages__language">
-                            <img class="languages__language--img"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                                alt="">
-                            <span class="languages__name">HTML</span>
-                        </figure>
-                        <figure class="languages__language">
-                            <img class="languages__language--img"
-                                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
-                            <span class="languages__name">CSS</span>
-                        </figure>
-                        <figure class="languages__language">
-                            <img class="languages__language--img"
-                                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
-                            <span class="languages__name">JavaScript</span>
-                        </figure>
+                    <img src="./assets/memoji.png" class="aboutme__image" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technoligies">
+        <div class="container">
+            <div class="row">
+                <div class="technoligies__wrapper">
+                    <h1 class="section__title technoligies__title"><span class="number__section">02.</span>My technoligies</h1>
+                    <div class="technoligies__wrapper">
+                        <div class="technoligies">
+                            <figure class="technoligies__language">
+                                <img class="technoligies__language--img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                                    alt="">
+                                <span class="technoligies__name">HTML</span>
+                            </figure>
+                            <figure class="technoligies__language">
+                                <img class="technoligies__language--img"
+                                    src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+                                <span class="technoligies__name">CSS</span>
+                            </figure>
+                            <figure class="technoligies__language">
+                                <img class="technoligies__language--img"
+                                    src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+                                <span class="technoligies__name">JavaScript</span>
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,9 +171,7 @@
     <section id="projects">
         <div class="container">
             <div class="row">
-                <h1 class="section__title">
-                    Here are some of my <span class="navyblue">projects</span>
-                </h1>
+                <h1 class="section__title"><span class="number__section">03.</span>Some of my work</h1>
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
@@ -334,7 +335,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
