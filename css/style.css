@@ -754,24 +754,24 @@ footer {
 
 .cloud--0 {
     top: 120px;
-    left: 80px;
+    left: 60px;
     width: 100px;
 }
 .cloud--1 {
-    bottom: 160px;
-    left: 90px;
+    bottom: 140px;
+    left: 70px;
     z-index: 5;
     width: 80px;
 }
 .cloud--2 {
-    top: 150px;
-    right: 80px;
+    top: 90px;
+    right: 60px;
     z-index: 5;
     width: 110px;
 }
 .cloud--3 {
-    bottom: 140px;
-    right: 20px;
+    bottom: 110px;
+    right: 60px;
     width: 110px;
 }
 
@@ -845,6 +845,21 @@ footer {
     }
 }
 
+@media (max-height:800px) {
+    .cloud--0 {
+        top: 60px;
+    }
+    .cloud--1 {
+        bottom: 80px;
+    }
+    .cloud--2 {
+        top: 80px;
+    }
+    .cloud--3 {
+        bottom: 100px;
+    }
+}
+
 @media (max-width: 480px) {
     .section__title {
         font-size: 40px;
@@ -878,35 +893,20 @@ footer {
         width: 80px;
     }
     .cloud--1 {
-        bottom: 80px;
-        left: 90px;
+        bottom: 60px;
+        left: 50px;
         z-index: 5;
         width: 60px;
     }
     .cloud--2 {
-        top: 60px;
-        right: 40px;
+        top: 40px;
+        right: 20px;
         z-index: 5;
         width: 90px;
     }
     .cloud--3 {
-        bottom: 100px;
-        right: 20px;
+        bottom: 40px;
+        right: 40px;
         width: 90px;
-    }
-}
-
-@media (max-height:800px) {
-    .cloud--0 {
-        top: 60px;
-    }
-    .cloud--1 {
-        bottom: 80px;
-    }
-    .cloud--2 {
-        top: 80px;
-    }
-    .cloud--3 {
-        bottom: 100px;
     }
 }
