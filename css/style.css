@@ -795,13 +795,20 @@ footer {
 
 @media (max-width: 480px) {
     .title {
-        font-size: 52px;
+        font-size: 42px;
     }
     .header__para {
-        font-size: 18px;
+        font-size: 16px;
     }
     .nav__link:first-child {
         display: none;
+    }
+    .banner {
+        height: 40vh;
+        width: 80%;
+    }
+    .scroll {
+        bottom: 35px;
     }
     .project {
         width: 100%;
