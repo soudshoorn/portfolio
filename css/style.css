@@ -753,24 +753,24 @@ footer {
 }
 
 .cloud--0 {
-    top: 120px;
+    top: 140px;
     left: 60px;
     width: 100px;
 }
 .cloud--1 {
-    bottom: 140px;
-    left: 70px;
+    bottom: 160px;
+    left: 100px;
     z-index: 5;
     width: 80px;
 }
 .cloud--2 {
-    top: 90px;
+    top: 110px;
     right: 60px;
     z-index: 5;
     width: 110px;
 }
 .cloud--3 {
-    bottom: 110px;
+    bottom: 130px;
     right: 60px;
     width: 110px;
 }
