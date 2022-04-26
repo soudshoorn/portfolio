@@ -896,17 +896,17 @@ footer {
     }
 }
 
-@media (max-height:750px) {
+@media (max-height:800px) {
     .cloud--0 {
-        top: 20px;
+        top: 60px;
     }
     .cloud--1 {
-        bottom: 40px;
+        bottom: 80px;
     }
     .cloud--2 {
-        top: 40px;
+        top: 80px;
     }
     .cloud--3 {
-        bottom: 60px;
+        bottom: 100px;
     }
 }
