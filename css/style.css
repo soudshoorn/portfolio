@@ -424,29 +424,51 @@ nav {
 */
 
 #technoligies {
-    margin-top: 120px;
-}
-
-.technoligies__language--img {
-    width: 80px;
+    margin-top: 160px;
 }
 
 .technoligies {
     padding: 0 24px;
     display: flex;
     text-align: center;
-    gap: 16px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.languages__icon {
+    transition: all 400ms ease;
+    font-size: 80px;
+    color: #336662;
+    text-align: center;
 }
 
 .technoligies__title {
+    margin-bottom: 24px;
     text-align: center;
+}
+
+.technoligies__image {
+    width: 250px;
+    background-color: #336662;
+    box-shadow: 0 0 0 10px #33666296; /* OUTLINE DOES NOT WORK ON MOBILE */
+    border-radius: 50%;
+    padding: 32px;
+}
+
+.technoligies__main {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 80px;
 }
 
 .technoligies__wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .technoligies__language {
@@ -468,6 +490,10 @@ nav {
     transform: scale(0);
     transition: all 300ms ease;
     font-family: 'Roboto Mono', sans-serif;
+}
+
+.technoligies__language:hover .languages__icon {
+    color: #1bbb8b;
 }
 
 .technoligies__language:hover .technoligies__name {
@@ -756,6 +782,9 @@ footer {
 */
 
 @media (max-width: 768px) {
+    .technoligies__main {
+        flex-direction: column;
+    }
     .scroll {
         bottom: 40px;
     }
@@ -791,6 +820,29 @@ footer {
     .banner {
         height: 50vh;
     }
+    
+    .cloud--0 {
+        top: 60px;
+        left: 80px;
+        width: 100px;
+    }
+    .cloud--1 {
+        bottom: 80px;
+        left: 90px;
+        z-index: 5;
+        width: 80px;
+    }
+    .cloud--2 {
+        top: 60px;
+        right: 80px;
+        z-index: 5;
+        width: 110px;
+    }
+    .cloud--3 {
+        bottom: 100px;
+        right: 20px;
+        width: 110px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -808,7 +860,7 @@ footer {
     }
     .banner {
         height: 40vh;
-        width: 80%;
+        width: 300px;
     }
     .scroll {
         bottom: 35px;
@@ -818,5 +870,43 @@ footer {
     }
     .contact {
         padding: 40px;
+    }
+    
+    .cloud--0 {
+        top: 60px;
+        left: 40px;
+        width: 80px;
+    }
+    .cloud--1 {
+        bottom: 80px;
+        left: 90px;
+        z-index: 5;
+        width: 60px;
+    }
+    .cloud--2 {
+        top: 60px;
+        right: 40px;
+        z-index: 5;
+        width: 90px;
+    }
+    .cloud--3 {
+        bottom: 100px;
+        right: 20px;
+        width: 90px;
+    }
+}
+
+@media (max-height:750px) {
+    .cloud--0 {
+        top: 20px;
+    }
+    .cloud--1 {
+        bottom: 40px;
+    }
+    .cloud--2 {
+        top: 40px;
+    }
+    .cloud--3 {
+        bottom: 60px;
     }
 }
