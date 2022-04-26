@@ -17,8 +17,8 @@ function contact(event) {
 
     const loading = document.querySelector('.contact__overlay--loading');
     const success = document.querySelector('.contact__overlay--success');
-    loading.classList += ' contact__overlay--visible';
-
+    const form = document.querySelector('.contact__form--wrapper');
+    loading.style.display = 'block';
     emailjs
         .sendForm(
             'service_rl5ih3f',
@@ -26,21 +26,25 @@ function contact(event) {
             event.target,
             'k-Py2NOiNbQ06lq8a'
         ).then(() =>{
-            loading.classList.remove('contact__overlay--visible');
-            success.classList += ' contact__overlay--visible';
-            console.log('Email sent!')
+            loading.style.display = 'none';
+            success.style.display = 'block';
+            form.style.display = 'none';
         }).catch(() => {
-            loading.classList.remove('contact__overlay--visible');
+            loading.style.display = 'block';
+            form.style.display = 'none';
             alert('Something went wrong, please try again later. Or contact me directly on: sennaoudshoorn@gmail.com');
         })
 }
 
-function toggleContact() {
-    if (isModalOpen) {
-        isModalOpen = false;
-        return document.body.classList.remove("contact--open");
+function moveBackground(event) {
+    const clouds = document.querySelectorAll('.cloud');
+    const x = event.clientX / 50;
+    const y = event.clientY / 50;
+    console.log(x, y);
+
+    for (i = 0; i < clouds.length; i++) {
+        const isOdd = i % 2 !== 0;
+        const oddInteger = isOdd ? -1 : 1;
+        clouds[i].style.transform = `translate(${x * oddInteger}px, ${y * oddInteger}px)`;
     }
-    window.scrollTo(0, 0);
-    isModalOpen = true;
-    document.body.classList += " contact--open";
 }

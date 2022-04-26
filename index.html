@@ -21,26 +21,26 @@
 </head>
 
 <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
             <div class="nav__title">
                 <a href="/"></a><label class="nav__title--label">Senna</label></a>
             </div>
             <ul class="nav__link--list">
                 <li class="nav__link">
-                    <a href="#" class="
+                    <a href="#aboutme" class="
                     nav__link--anchor 
                     link__hover-effect 
                     ">About</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#" class="
+                    <a href="#projects" class="
                     nav__link--anchor 
                     link__hover-effect 
                     ">Projects</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#" class="
+                    <a href="#contact" class="
                     nav__link--anchor 
                     link__hover-effect 
                     " onclick="toggleContact()">Contact</a>
@@ -66,51 +66,17 @@
                     </a>
                 </div>
                 <div class="banner">
-                    <img src="./assets/header.png" alt="" class="banner--img">
+                    <img src="./assets/cloud.png" class="cloud cloud--0" alt="">
+                    <img src="./assets/cloud.png" class="cloud cloud--1" alt="">
+                    <img src="./assets/cloud.png" class="cloud cloud--2" alt="">
+                    <img src="./assets/cloud.png" class="cloud cloud--3" alt="">
+                    <img src="./assets/happy.png" alt="" class="banner--img">
                 </div>
             </div>
         </header>
-        <button class="mail__btn click" onclick="toggleContact()">
-            <span class="mail__btn--title">let's<br>talk</span>
-        </button>
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
-        <div class="modal">
-            <div class="contact">
-                <h3 class="contact__title">
-                    Let's have a chat!
-                </h3>
-                <h4 class="contact__sub-title">
-                    I'm currently open to new opportunities.
-                </h4>
-                <form id="contact__form" onsubmit="contact(event)">
-                    <div class="form__item">
-                        <label class="form__item--label">Name *</label>
-                        <input class="input" name="user_name" type="text" required></input>
-                    </div>
-                    <div class="form__item">
-                        <label class="form__item--label">E-Mail *</label>
-                        <input class="input" name="user_email" type="email" required></input>
-                    </div>
-                    <div class="form__item">
-                        <label class="form__item--label">Message *</label>
-                        <textarea class="input" name="message" type="text" required></textarea>
-                    </div>
-                    <button id="contact__submit" class="form__submit">
-                        Send it my way
-                    </button>
-                </form>
-                <!-- <img class="contact__img" src="./assets/undraw_personal_text_re_vqj3.svg" alt=""> -->
-                <div class="contact__overlay contact__overlay--loading">
-                    <i class="fas fa-spinner"></i>
-                </div>
-                <div class="contact__overlay contact__overlay--success">
-                    Thanks for the message, looking forward to speaking to you soon!
-                </div>
-                <i onclick="toggleContact()" class="fas fa-times modal__exit click"></i>
-            </div>
-        </div>
     </section>
 
     <section id="aboutme">
@@ -297,40 +263,33 @@
     <footer>
         <div class="container">
             <div class="row footer__row">
-                <div class="footer__title">
-                    <label class="footer__title--label">Senna Oudshoorn</label>
+                <div class="contact" id="contact">
+                    <div class="section__title--wrapper getintouch"><span class="number__section">04.</span><h1 class="section__title">Get in touch</h1></div>
+                    <div class="contact__overlay contact__overlay--loading">
+                        <i class="fas fa-spinner"></i>
+                    </div>
+                    <div class="contact__overlay contact__overlay--success">
+                        Thanks for the message, looking forward to speaking to you soon!
+                    </div>
+                    <div class="contact__form--wrapper">
+                        <form id="contact__form" onsubmit="contact(event)">
+                            <div class="form__item">
+                                <input class="input" name="user_name" type="text" placeholder="Name" required></input>
+                            </div>
+                            <div class="form__item">
+                                <input class="input" name="user_email" type="email" placeholder="Email" required></input>
+                            </div>
+                            <div class="form__item">
+                                <textarea class="input" name="message" type="text" placeholder="Message" required></textarea>
+                            </div>
+                            <button id="contact__submit" class="form__submit">
+                                Send it my way
+                            </button>
+                        </form>
+                        <img src="./assets/contact.png" class="contact__form--image" alt="">
+                    </div>
                 </div>
-                <div class="footer__social--list">
-                    <a href="https://github.com/soudshoorn" target="_blank" class="
-                  footer__social--link 
-                  link__hover-effect 
-                  link__hover-effect--white
-                ">
-                        Github
-                    </a>
-                    <a href="https://linkedin.com/soudshoorn" target="_blank" class="
-                  footer__social--link 
-                  link__hover-effect 
-                  link__hover-effect--white
-                ">
-                        LinkedIn
-                    </a>
-                    <a onclick="toggleContact()" href="#" class="
-                  footer__social--link 
-                  link__hover-effect 
-                  link__hover-effect--white
-                ">
-                        Contact
-                    </a>
-                    <a href="./assets/David Bragg Resume.pdf" target="_blank" class="
-                  footer__social--link 
-                  link__hover-effect 
-                  link__hover-effect--white
-                ">
-                        Resume
-                    </a>
-                </div>
-                <div class="footer__copyright">&copy; Senna Oudshoorn</div>
+                <div class="footer__copyright"><a href="/" class="footer__copyright--link">&copy; Senna Oudshoorn</a></div>
             </div>
         </div>
     </footer>
