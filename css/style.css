@@ -734,8 +734,16 @@ footer {
 */
 
 @media (max-width: 768px) {
+    .technoligies {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
     .technoligies__main {
         flex-direction: column;
+    }
+    .technoligies__row--3 {
+        display: flex;
     }
     .scroll {
         bottom: 40px;
