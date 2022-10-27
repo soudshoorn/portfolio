@@ -727,6 +727,16 @@ footer {
     width: 110px;
 }
 
+.coming__soon--project {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1bbb8b;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
 /*
 
     MEDIA QUERIES
