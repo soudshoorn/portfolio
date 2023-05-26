@@ -1,11 +1,9 @@
-import projects from './projects.js';
 const projectsList = document.querySelector('.project__list');
 
 let isModalOpen = false;
 let contrastToggle = false;
 
 function toggleContrast() {
-    console.log('test');
     contrastToggle = !contrastToggle;
     if (contrastToggle) {
         document.body.classList += " dark-theme";
@@ -14,40 +12,19 @@ function toggleContrast() {
     }
 }
 
-// function loadProjects() {
-//     projects.map((project) => {
-//         projectsList.innerHTML += "
-//         <li class='project'>
-//         <div class='project__wrapper'>
-//             <img src='./assets/project-tictactoe.jpg' class='project__img' alt=''>
-//             <div class='project__description'>
-//                 <span class='project__type'>Featured Project</span>
-//                 <h3 class='project__description--title'>
-//                     Tic Tac Toe
-//                 </h3>
-//                 <h4 class='project__description--sub-title'>
-//                     HTML, CSS, Javascript
-//                 </h4>
-//                 <p class='project__description--para'>
-//                     A web app for playing a game of tic tac toe. Play against a friend or the computer
-//                     (the computer is pretty dumb), choose how many rounds you want to play. Till the 
-//                     winner will be decided. This was my first javascript project and learned alot from it. 
-//                 </p>
-//                 <div class='project__description--links'>
-//                     <a href='https://github.com/soudshoorn/tictactoe' target='_blank'
-//                         class='project__description--link'>
-//                         <i class='fab fa-github'></i>
-//                     </a>
-//                     <a href='https://tictactoe-zeta-seven.vercel.app/' target='_blank'
-//                         class='project__description--link'>
-//                         <i class='fas fa-external-link-alt'></i>
-//                     </a>
-//                 </div>
-//             </div>
-//         </div>
-//     </li>";
-//     });
-// }
+function getAge() {
+    var today = new Date();
+    var birthDate = new Date("03/01/2005");
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    return age;
+}
+
+document.querySelector('.age').textContent = getAge();
 
 
 function contact(event) {
